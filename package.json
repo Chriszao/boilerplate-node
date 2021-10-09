@@ -1,10 +1,10 @@
 {
   "name": "boilerplate-node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
   },
